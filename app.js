@@ -18,6 +18,7 @@ const eduWarning = document.querySelector(".edu-para");
 const deleteBtn = document.querySelector(".delete");
 const column = document.querySelector(".table-column");
 const clear = document.querySelector(".clr-btn");
+const sortValue = document.getElementById('sort');
 
 // Table will create when window will reload and if there is data in localstorage.
 
@@ -170,3 +171,20 @@ clear.addEventListener("click", () => {
   dataTable.innerHTML = "";
   display();
 });
+
+// Sorting of data by name
+
+sortValue.addEventListener('change',(e) => {
+  if(e.target.value === "ascending"){
+    personData.sort((a,b) => a.name.localeCompare(b.name))
+  }
+  dataTable.innerHTML =""
+  display();
+})
+sortValue.addEventListener('change', (e) => {
+  if(e.target.value === "descending"){
+    personData.sort((a,b) => b.name.localeCompare(a.name));
+  }
+  dataTable.innerHTML = ''
+  display();
+})
