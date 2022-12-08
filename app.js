@@ -47,10 +47,10 @@ function inputReset() {
 function createTable(dataItems) {
   const newRow = document.createElement("tr");
   newRow.setAttribute("id", dataItems.id);
-  newRow.innerHTML = `<td>${dataItems.name.toUpperCase()}</td>
+  newRow.innerHTML = `<td>${dataItems.name}</td>
                         <td>${dataItems.age}</td>
-                        <td>${dataItems.pan.toUpperCase()}</td>
-                        <td>${dataItems.qualification.toUpperCase()}</td>
+                        <td>${dataItems.pan}</td>
+                        <td>${dataItems.qualification}</td>
                         <td><button class="delete">Delete</button></td>`;
 
   dataTable.appendChild(newRow);
@@ -135,7 +135,7 @@ dataTable.addEventListener("click", (e) => {
 
 function handleSearch() {
   const filterArr = personData.filter((item) =>
-    item.pan.includes(searchBar.value.toUpperCase())
+    item.pan.includes(searchBar.value)
   );
   if (filterArr.length != 0) {
     dataTable.innerHTML = "";
