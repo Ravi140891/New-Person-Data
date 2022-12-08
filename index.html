@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Pan Details</title>
+  </head>
+  <body>
+<!-- Nav Bar Design -->
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <!-- Sort menu New User Button and Search Bar design -->
+    <main>
+      <div class="sorting">
+        <label for="sort">Sort by Name:</label>
+        <select name="sort" id="sort">
+          <option value="ascending">A-Z</option>
+          <option value="descending">Z-A</option>
+        </select>
+      </div>
+      <div class="new-user">
+        <button class="btn btn-new-user">Click here to add your details in our Database!</button>
+      </div>
+      <div class="search">
+        <input type="text" name="search" id="searching" placeholder="Search your Pan details">
+        <button class="clr-btn">Clear</button>
+      </div>
+    </main>
+    <!-- Pop up display to enter data in table -->
+    <section class="input-form pop">
+        <form class="input-data">
+            <input type="text" name="name" id="name" placeholder="Enter your name"> <p class="warning name-para">Name can't be empty</p>
+            <input type="number" name="age" id="age" placeholder="Enter your age"><p class="warning age-para">Age can't be empty</p>
+            <input type="text" name="pan" id="pan" placeholder="Enter your Pan number"><p class="warning pan-para">Enter PAN number</p>
+            <input type="text" name="edu" id="edu" placeholder="Enter your highest qualification"><p class="warning edu-para">Qualification can't be empty</p>
+            <button id="submit-data">Submit</button>
+
+        </form>
+    </section>
+    <section>
+        <!-- Table to store person details -->
+        <table>
+            <thead>
+                <th class="name-data">Name</th>
+                <th class="age-data">Age</th>
+                <th class="pan-data">Pan Number</th>
+                <th class="edu-data">Qualification</th>
+                <th>Action</th>
+            </thead>
+            <tbody class="data-table">
+            </tbody>
+        </table>
+    </section>
+    </div>
+  </body>
+</html>

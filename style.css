@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    padding: .5rem 8rem;
+    width: 100vw;
+}
+nav{
+    width: 100%;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    color: whitesmoke;
+}
+.container{
+    padding: 1rem 8rem;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.btn-new-user{
+    padding: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 50px;
+}
+.search input{
+    padding: 10px;
+    border-radius: 50px;
+}
+.clr-btn{
+    padding: 8px 12px;
+    margin-left: 5px;
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+#sort{
+    padding: 8px;
+    border-radius: 50px;
+}
+label{
+    font-size: large;
+}
+section{
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+}
+table, th, td {
+    width: auto;
+    border: 1px solid black;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+th{
+    background-color: crimson;
+    color: whitesmoke;
+}
+.name-data{
+    width: 25rem;
+}
+.pan-data{
+    width: 25%;
+}
+.age-data{
+    width: 20%;
+}
+.edu-data{
+    width: 25%;
+}
+.input-form{
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #cbced1,
+              -12px -12px 20px #ffffff;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+}
+.input-form input{
+    width: 97%;
+    padding: 5px;
+    margin: 10px;
+}
+.input-form button{
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.pop{
+    display: none;
+}
+.warning{
+    color: red;
+    display: none;
+}
+.delete{
+    border: none;
+    padding: 5px;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+.error{
+    color: red;
+    font-size: large;
+}
+
